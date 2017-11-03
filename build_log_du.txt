@@ -1,0 +1,5 @@
+1. system.h中定义函数void usleep(__int64 usec);
+
+2. 对于g2o中的sparse_block_matrix_(ccs/diagonal).h中的atxpy函数——“*atxpy(*)”,需要修改为template axpy<SparseMatrixBlock>(*); 对于sparse_block_matrix.h中，则变更为  template axpy<typename SparseBlockMatrix<MatrixType>::SparseMatrixBlock>(*)
+
+
